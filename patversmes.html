@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Zoojumts</title>
+</head>
+<body>
+    <div class="navContainer">
+        <div class="navLogo">
+            <b>
+            <a href="./index.html">Zoojumts.lv</a>
+            </b>
+        </div>
+        <nav class="navLinks">
+            <ul class="navUl">
+                <a href="./index.html">Galvenā lapa</a>
+                <a href="./about.html">Par vietni</a>
+                <a href="./patversmes.html">Dzīvnieki patversmēs</a>
+                <a href="./emuars.html">Aprupes emuārs</a>
+                <a href="./klinikas.html">Klīnikas un Veikali</a>
+                <button id="theme" class="themeButton">
+                    <img id="buttonImg" src="Images/brightness.png" alt="" height="32px" width="32px">
+                </button>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mainContainer">
+        <h1 class="patversmeH1">Dzīvnieki patversmēs</h1>
+
+        <div class="patFilterContainer">
+            <p class="patFilter">Izvēlieties, kurus dzīvniekus radīt</p>
+                <div class="mapFilters">
+                    <p><input type="radio" id="kakiCheck" name="animalFilter">Kaķi</p>
+                    <p><input type="radio" id="suniCheck" name="animalFilter">Suņi</p>
+                    <p><input type="radio" id="visiCheck" name="animalFilter">Visi</p>
+                </div>
+            <p class="patFilter">Izvēlieties, no kadam patversmem radīt dzīvniekus</p>
+            <div class="mapFilters">
+                <p><input type="checkbox" id="labasCheck">Labās mājas</p>
+                <p><input type="checkbox" id="remiCheck">Kaķa sirds</p>
+                <p><input type="checkbox" id="dzdCheck">Dzīvnieku draugs</p>
+            </div>
+        </div>
+
+		<div id="aniGrid">
+			
+		</div>
+
+        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Freepik - Flaticon</a>
+        <br><br>
+
+        <div class="footerContainer">
+            <div class="footLogo">
+                <b><a href="./index.html">Zoojumts.lv</a></b>
+            </div>
+            <div class="footSocials">
+                <h1>Mēs esam sociālajos tīklos</h1>
+                <a href="">
+                    <img src="./Images/face.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./Images/insta.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./Images/tik.png" alt="">
+                </a>
+                
+            </div>
+            <div class="footContacts">
+                <h1>Kā ar mums sazināties</h1>
+                <p>E-mail: zoojumts@inbox.lv</p>
+                <p>Tālrunis: Piemers</p>
+            </div>
+            
+        </div>
+    </div>
+<script src="./script.js"></script> 
+</body>
+</html>

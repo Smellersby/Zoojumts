@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+    <title>Zoojumts</title>
+</head>
+<body>
+    <div class="navContainer">
+        <div class="navLogo">
+            <b>
+            <a href="./index.html">Zoojumts.lv</a>
+            </b>
+        </div>
+        <nav class="navLinks">
+            <ul class="navUl">
+                <a href="./index.html">Galvenā lapa</a>
+                <a href="./about.html">Par vietni</a>
+                <a href="./patversmes.html">Dzīvnieki patversmēs</a>
+                <a href="./emuars.html">Aprupes emuārs</a>
+                <a href="./klinikas.html">Klīnikas un Veikali</a>
+                <button id="theme" class="themeButton">
+                    <img id="buttonImg" src="Images/brightness.png" alt="" height="32px" width="32px">
+                </button>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mainContainer">
+
+        <h1 class="mapHeader">Klīniku un veikalu karte</h1>
+        <div class="mapContainer">
+            <p class="iamSorry">Izvēlieties, kuras vietas vēlaties redzēt</p>
+            <div class="mapFilters">
+                <p><input type="checkbox" id="klinikasCheck">Klīnikas<img src="./Images/hospIcon.png" alt="" height="35px"></p>
+                <p><input type="checkbox" id="veikaliCheck">Veikali<img src="./Images/pinFood.png" alt="" height="35px"></p>
+                <p><input type="checkbox" id="sheltersCheck">Patversmes<img src="./Images/pinShelter.png" alt="" height="35px"></p>
+            </div>
+            <div id="map"></div>
+        </div>
+
+        <div class="footerContainer">
+            <div class="footLogo">
+                <b><a href="./index.html">Zoojumts.lv</a></b>
+            </div>
+            <div class="footSocials">
+                <h1>Mēs esam sociālajos tīklos</h1>
+                <a href="">
+                    <img src="./Images/face.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./Images/insta.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./Images/tik.png" alt="">
+                </a>
+                
+            </div>
+            <div class="footContacts">
+                <h1>Kā ar mums sazināties</h1>
+                <p>E-mail: zoojumts@inbox.lv</p>
+                <p>Tālrunis: Piemers</p>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="./script.js"></script> 
+</body>
+</html>
