@@ -1,0 +1,27 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+#emailContainer{
+    background-color: var(--gray);
+    width: 100%;
+    border-radius: 10px;
+    width: 80%;
+    margin: 50px 0px;
+    padding: 10px 30px 30px 30px;
+    color: var(--black);
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+textarea {
+    resize: none;
+}
+#submitButton{
+    color: white;
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+    background-color: var(--green);
+    border-style: none;
+    border-radius: 7px;
+    padding: 10px;
+}

@@ -1,0 +1,51 @@
+#map{
+    height: 70vh;
+    width: 100%;
+    border-radius: 15px;
+}
+.mapContainer{
+    background-color: var(--gray);
+    border-radius: 40px;
+    padding: 40px;
+}
+.iamSorry{
+    color: var(--black);
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+.mapHeader{
+    color: var(--black);
+    font-size: 32px;
+    font-family: 'Dosis', sans-serif;
+    margin: 40px 20px 40px 20px;
+}
+.mapFilters{
+    display: flex;
+    color: var(--black);
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    gap: 40px;
+}
+.mapFilters p{
+    display: flex;
+    align-items: center;
+}
+.patversmeH1{
+    margin-top: 40px;color: var(--black);
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+}
+.patFilter{
+    color: var(--black);
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+.patFilterContainer{
+    margin-top: 40px;
+    background-color: var(--gray);
+    border-radius: 40px;
+    padding: 20px;
+    width: 50%;
+}

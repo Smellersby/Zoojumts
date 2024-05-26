@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/zinojums.css">
+    <title>Zoojumts</title>
+</head>
+<body>
+    <nav class="navContainer">
+        <button id="menuButton" class="themeButton">
+            <img id="menuButtonImg" src="../Images/menuButton.png" alt="" height="32" width="32">
+        </button>
+        <div class="navLogo">
+            <b>
+            <a href="../HTML/index.html">Zoojumts.lv</a>
+            </b>
+        </div>
+        <div class="navLinks">
+            <div class="navUl">
+                <a href="../HTML/index.html">Galvenā lapa</a>
+                <a href="../HTML/about.html">Par vietni</a>
+                <a href="../HTML/patversmes.html">Dzīvnieki patversmēs</a>
+                <a href="../HTML/klinikas.html">Klīnikas un Veikali</a>
+                <button id="theme" class="themeButton">
+                    <img id="buttonImg" src="../Images/brightness.png" alt="" height="32" width="32">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="compactNav">
+        <div>
+            <button id="backButton" class="themeButton">
+            <img id="backButtonImg" src="../Images/back.png" alt="" height="32" width="32">
+            </button>
+            <a href="../HTML/index.html">Galvenā lapa</a>
+            <a href="../HTML/about.html">Par vietni</a>
+            <a href="../HTML/patversmes.html">Dzīvnieki patversmēs</a>
+            <a href="../HTML/klinikas.html">Klīnikas un Veikali</a>
+        </div>
+    </nav>
+
+    <main class="mainContainer">
+        <div id="emailContainer">
+            <h1>Uzrakstiet ziņu patversmei</h1>
+            <form id="emailForm" action="https://www.w3schools.com/action_page.php ">
+                <label for="email">Jusu epasts:</label>
+                <input required type="email" id="email" name="yourAdress"><br><br>
+                <label for="patversme">Patversme:</label>
+                <select id="patversme" name="patversme">
+                    <option value="labasM">Labās mājas</option>
+                    <option value="remiC">Kaķa sirds</option>
+                    <option value="dzd">Dzīvnieku draugs</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="dzivnieks">Mīluļa vārds:</label>
+                <select id="dzivnieks" name="dzivnieks">
+                </select><br><br>
+                <label for="textInput">Jusu ziņojums:</label><br>
+                <textarea required id="textInput" name="zinojums" rows="4" cols="50"  maxlength="255"></textarea><br><br>
+                <label for="ziedojums">Ziedojums:</label>
+                <input type="text" id="ziedojums" name="ziedojums" placeholder="€"><br><br>
+                <input id="submitButton" type="submit" value="Nosūtīt">
+            </form>
+        </div>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="footLogo">
+            <b><a href="./index.html">Zoojumts.lv</a></b>
+        </div>
+        <div class="footSocials">
+            <h1>Mēs esam sociālajos tīklos</h1>
+            <a href="">
+                <img src="../Images/face.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/insta.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/tik.png" alt="">
+            </a>
+            
+        </div>
+        <div class="footContacts">
+            <h1>Kā ar mums sazināties</h1>
+            <p>E-mail: zoojumts@inbox.lv</p>
+            <p>Tālrunis: Piemers</p>
+        </div>
+        
+    </footer>
+    <script src="../JS/script.js"></script> 
+    <script src="../JS/zinojums.js"></script> 
+    <script src="../JS/dzivnieki.js"></script>
+
+</body>
+</html>

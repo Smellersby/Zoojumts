@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/patversmes.css">
+    <title>Zoojumts</title>
+</head>
+<body>
+    <nav class="navContainer">
+        <button id="menuButton" class="themeButton">
+            <img id="menuButtonImg" src="../Images/menuButton.png" alt="" height="32" width="32">
+        </button>
+        <div class="navLogo">
+            <b>
+            <a href="../HTML/index.html">Zoojumts.lv</a>
+            </b>
+        </div>
+        <div class="navLinks">
+            <div class="navUl">
+                <a href="../HTML/index.html">Galvenā lapa</a>
+                <a href="../HTML/about.html">Par vietni</a>
+                <a href="../HTML/patversmes.html">Dzīvnieki patversmēs</a>
+                <a href="../HTML/klinikas.html">Klīnikas un Veikali</a>
+                <button id="theme" class="themeButton">
+                    <img id="buttonImg" src="../Images/brightness.png" alt="" height="32" width="32">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="compactNav">
+        <div>
+            <button id="backButton" class="themeButton">
+            <img id="backButtonImg" src="../Images/back.png" alt="" height="32" width="32">
+            </button>
+            <a href="../HTML/index.html">Galvenā lapa</a>
+            <a href="../HTML/about.html">Par vietni</a>
+            <a href="../HTML/patversmes.html">Dzīvnieki patversmēs</a>
+            <a href="../HTML/klinikas.html">Klīnikas un Veikali</a>
+        </div>
+    </nav>
+
+    <main class="mainContainer">
+        <h1 class="patversmeH1">Dzīvnieki patversmēs</h1>
+
+        <div class="patFilterContainer">
+            <p class="patFilter">Izvēlieties, kurus dzīvniekus radīt</p>
+            <div class="mapFilters">
+                <p><input type="radio" id="kakiCheck" name="animalFilter">Kaķi</p>
+                <p><input type="radio" id="suniCheck" name="animalFilter">Suņi</p>
+                <p><input type="radio" id="visiCheck" name="animalFilter">Visi</p>
+            </div>
+            <p class="patFilter">Izvēlieties, no kadam patversmem radīt dzīvniekus</p>
+            <div class="mapFilters">
+                <p><input type="checkbox" id="labasCheck">Labās mājas</p>
+                <p><input type="checkbox" id="remiCheck">Kaķa sirds</p>
+                <p><input type="checkbox" id="dzdCheck">Dzīvnieku draugs</p>
+            </div>
+        </div>
+
+		<div id="aniGrid">
+		</div>
+
+        <br><br>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="footLogo">
+            <b><a href="./index.html">Zoojumts.lv</a></b>
+        </div>
+        <div class="footSocials">
+            <h1>Mēs esam sociālajos tīklos</h1>
+            <a href="">
+                <img src="../Images/face.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/insta.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/tik.png" alt="">
+            </a>
+            
+        </div>
+        <div class="footContacts">
+            <h1>Kā ar mums sazināties</h1>
+            <p>E-mail: zoojumts@inbox.lv</p>
+            <p>Tālrunis: Piemers</p>
+        </div>
+        
+    </footer>
+
+    <script src="../JS/script.js"></script> 
+    <script src="../JS/patversmes.js"></script> 
+    <script src="../JS/dzivnieki.js"></script> 
+</body>
+</html>

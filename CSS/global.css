@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+    --green: #469114;
+    --Acolor: rgb(33, 114, 200);
+    --white: #fefffa; 
+    --black: #000000 ;
+    --lessBlack: #9699a4; ;
+    --whiter: #ffffff;
+    --darker: #d6d6d6;
+    --gray: #f4f4f9;
+  }
+body{
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainContainer{
+    margin-top: 70px;
+    width: 1400px;
+    position: relative;
+
+}
+.footerContainer{
+    width: 1400px;
+}
+.compactNav{
+    background-color: var(--green);
+    transition: left 0.5s;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    left: -500px;
+    top: 0px;
+    z-index: 5;
+    box-shadow: -20px 0px 100px 50px #000;
+}
+.compactNav div{
+    margin: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.compactNav div a{
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--whiter);
+    font-family: 'Dosis', sans-serif;
+}
+.navContainer{
+    background-color: var(--green);
+    display: flex;
+    height: 70px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    width: 1400px;
+    z-index: 3;
+    color: var(--whiter);
+    font-size: 20px;
+    align-items: center;
+    position: fixed;
+    transition: top 0.3s;
+}
+#menuButton{
+   margin-left: 20px; 
+   display: none;
+}
+.navLogo{
+    margin: 20px;
+    flex-grow: 2;
+}
+.navLogo a{
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    color: var(--whiter);
+    text-decoration: none;
+}
+.navLinks{
+    align-self: center;
+}
+.navLinks div{
+    margin: 20px;
+    flex-grow: 3;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    text-decoration: none;
+    column-gap: 40px;
+}
+.navLinks a{
+    text-decoration: none;
+    color: var(--whiter);
+    font-family: 'Dosis', sans-serif;
+}
+.navUl{
+    display: flex;
+    align-items: center;
+}
+.themeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background: var(--white);
+    border-radius: 10px;
+    border-width: 0px;
+}
+.navLinks a:hover{
+    color: var(--darker);
+}
+
+.footerContainer{
+    background-color: var(--green);
+    height: 150px;
+    display: grid;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    color: var(--whiter);
+    font-family: 'Dosis', sans-serif;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.footLogo{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 40px;
+}
+.footLogo a{
+    text-decoration: none;
+    color: var(--whiter);
+}
+.footSocials{
+    flex-grow: 2;
+    text-align: center;
+}
+.footSocials a{
+    text-decoration: none;
+    color: var(--whiter);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footAtributions{
+    text-align: center;
+}
+.footSocials img{
+    height: 32px;
+    width: 32px;
+}
+.footContacts{
+    flex-grow: 1;
+}
+.footContacts>*{
+    margin: 5px 0px 5px 0px;
+}
+@media (max-width: 1400px){
+  .mainContainer,.footerContainer{
+    width: 1000px;
+  }
+  .navContainer{
+    width: 100%;
+    border-radius: 0px;
+}
+.navLogo a{
+    font-size: 30px;
+}
+.navUl{
+    text-align: center;
+}
+  .rightBar{
+    width: 250px;
+  }
+  .heroJaunam{
+    grid-template-columns: 2fr 1fr;
+  }
+  .sponsors img{
+    width: 250px;
+    height: auto;
+  }
+  .footerContainer{
+    grid-template-columns: 0fr 1fr 1fr;
+  }
+  .footLogo *{
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+    .mainContainer,.footerContainer{
+        width: 100%;
+  }
+  .navLogo a {
+    font-size: 36px;
+  }
+  .navUl a{
+    display: none;
+  }
+  #menuButton{
+    display: flex;
+  }
+  .hero_image img{
+    width: 500px;
+    height: auto;
+    
+  }
+  .hero_text h1{
+     font-size: 37px;
+  }
+
+  .rightBar{
+    width: 200px;
+  }
+  .heroJaunam{
+    grid-template-columns: 2fr 1fr;
+  }
+  .sponsors img{
+    width: 200px;
+    height: auto;
+  }
+
+  
+  .footerContainer{
+    border-radius: 0px;
+  }
+  
+}
+@media (max-width: 750px) {
+    .footerContainer{
+        padding-top: 30px;
+        height: auto;
+        grid-template-columns:1fr;
+    }
+    .footerContainer img{
+        width: 50px;
+        height: 50px;
+    }
+    .footerContainer h1{
+        display: none;
+    }
+    .footContacts{
+        margin: 20px 0px;
+        text-align: center;
+    }
+}
