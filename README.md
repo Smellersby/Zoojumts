@@ -1,5 +1,8 @@
 # Zoojumts
-Vietne par mājdzīvniekiem no patversmēm. Šis bija mans skolas projekts, kuru papildināju, studējot LU.
+Main branch contains blog page, but LU edition features mobile phone support
+
+Vietne par mājdzivniekiem no patverumiem.
+
 Lai skatītu vietni, tā ir jālejupielādē un HTML mapē jāatver index.html .
 
 A website about pets from shelters. This was my school project, which I expanded while studying at LU.
