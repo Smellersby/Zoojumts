@@ -2,6 +2,7 @@
     height: 70vh;
     width: 100%;
     border-radius: 15px;
+    z-index: 3;
 }
 .mapContainer{
     background-color: var(--gray);

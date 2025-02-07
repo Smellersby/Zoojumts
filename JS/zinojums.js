@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    
     petName=sessionStorage.getItem("petName")
     for (i of dzivnieki) {
         if(i.name==petName){

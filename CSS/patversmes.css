@@ -67,3 +67,7 @@
     padding: 20px;
     margin: 0px 20px;
 }
+.hint{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(135, 138, 168);
+}

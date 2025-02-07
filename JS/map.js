@@ -7,8 +7,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }).addTo(map);
     //icons
     var hospIcon = L.icon({
-        iconUrl: '../images/hospIcon.png',
-        shadowUrl: '../images/pinShadow.png',
+        iconUrl: '../Images/hospIcon.png',
+        shadowUrl: '../Images/pinShadow.png',
 
         iconSize:     [35, 35], // size of the icon
         shadowSize:   [35, 35], // size of the shadow
@@ -17,8 +17,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
     });
     var foodIcon = L.icon({
-        iconUrl: '../images/pinFood.png',
-        shadowUrl: '../images/pinShadow.png',
+        iconUrl: '../Images/pinFood.png',
+        shadowUrl: '../Images/pinShadow.png',
 
         iconSize:     [35, 35], // size of the icon
         shadowSize:   [35, 35], // size of the shadow
@@ -27,8 +27,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
     });
     var shelterIcon = L.icon({
-        iconUrl: '../images/pinShelter.png',
-        shadowUrl: '../images/pinShadow.png',
+        iconUrl: '../Images/pinShelter.png',
+        shadowUrl: '../Images/pinShadow.png',
 
         iconSize:     [35, 35], // size of the icon
         shadowSize:   [35, 35], // size of the shadow
@@ -37,8 +37,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
     });
     var noIcon = L.icon({
-        iconUrl: '../images/pinShelter.png',
-        shadowUrl: '../images/pinShadow.png',
+        iconUrl: '../Images/pinShelter.png',
+        shadowUrl: '../Images/pinShadow.png',
 
         iconSize:     [0, 0], // size of the icon
         shadowSize:   [0, 0]

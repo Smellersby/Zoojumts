@@ -1,0 +1,244 @@
+body{
+    overflow-x: hidden;
+}
+.barBar{
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+.mainBar{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 2;
+    color: var(--black);
+}
+.rightBar{
+    display: flex;
+    flex-flow: column;
+    color: var(--black);
+}
+.rightBar h2{
+    margin-top: 25px;
+}
+.rightBar a{
+    color: var(--Acolor);
+}
+.sponsors{
+    color: var(--black);
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.sponsors h1{
+    margin-bottom: 20px;
+}
+.heroJaunam{
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+.heroJaunam h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Dosis', sans-serif;
+    margin: 15px;
+}
+.heroJaunam a{
+    color: var(--Acolor);
+}
+.heroJaunam p{
+    margin:20px;
+    font-size: 23px;
+    font-family: 'Dosis', sans-serif;
+    margin: 0px 15px 40px 40px;
+}
+.heroPopular * {
+    margin: 10px 0px 10px 0px;
+}
+.heroPopular{
+    background-color: var(--gray);
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+    padding: 20px;
+}
+.heroPopular h1{
+    text-align: center;
+    margin-top: 0px;
+}
+.heroJaunamImg{
+    background-image: url("../Images/feeding.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    max-height: 500px;
+    height: 90%;
+    border-radius: 20px;
+    margin: 0px 40px 40px 0px;
+}
+.articleContainer h1{
+    color: var(--black);
+    font-family: 'Dosis', sans-serif;
+    font-size: 36px;
+}
+.rakstsContainer{
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    justify-content: space-between;
+   }
+   .rightBar{
+       display: flex;
+       flex-flow: column;
+       width: 300px;
+   }
+   
+.rakstsContainer{
+ display: flex;
+ gap: 40px;
+ padding: 40px;
+ justify-content: space-between;
+}
+.rightBar{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+}
+.raksts p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+    color: var(--black);
+}
+.raksts h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    /*margin: 0;*/
+    color: var(--black);
+}
+.raksts h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    margin: 20px 20px 10px 0px;
+    color: var(--black);
+}
+.raksts h3{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0px 20px 20px 0px;
+    color: var(--lessBlack);
+}
+.raksts img{
+    border-radius: 20px;
+    margin: 10px 20px 10px 20px;
+}
+.raksts a{
+    color: var(--Acolor);
+    font-family: 'Dosis', sans-serif;
+}
+article.raksts{
+    background-color: var(--gray);
+    padding: 20px;
+    margin: 20px 40px 20px 0px;
+    border-radius: 40px;
+}
+article.raksts p{
+    margin: 15px 0px 15px 0px;
+}
+article.raksts h2{
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+}
+   
+   @media only screen and (max-width: 1400px) {
+       .mainContainer{
+           width: 1000px;
+     }
+     .hero_image img{
+       width: 500px;
+       height: auto;
+       
+     }
+     .hero_text h1{
+        font-size: 50px;
+     }
+     .rightBar{
+       width: 250px;
+     }
+     .heroJaunam{
+       grid-template-columns: 2fr 1fr;
+     }
+     .sponsors img{
+       width: 250px;
+       height: auto;
+     }
+
+   }
+   @media only screen and (max-width: 1200px) {
+     .hero_image img{
+       width: 500px;
+       height: auto;
+       
+     }
+     .hero_text h1{
+        font-size: 37px;
+     }
+   
+     .rightBar{
+       width: 200px;
+     }
+     .heroJaunam{
+       grid-template-columns: 2fr 1fr;
+     }
+     .sponsors img{
+       width: 200px;
+       height: auto;
+     }
+     
+   }
+
+@media (max-width: 1000px) {
+    
+    .mainContainer, .rakstsContainer{
+        width: 100%;
+        padding: 0px;
+    }
+    .rightBar{
+       display: none; 
+    }
+    .heroJaunam, .raksts{
+        width: auto;
+    }
+}
+@media (max-width: 800px) {
+    .heroJaunam{
+        display: flex;
+        flex-flow: column;
+    }
+    .heroJaunamImg{
+        width: 400px;
+        margin: 10px 10px 20px 10px;
+    }
+    .raksts>img{
+        width: 400px;
+        height: auto;
+    }
+    .raksts>h2{
+        margin-left: 10px;
+    }
+    .raksts>p{
+        margin-right: 10px;
+    }
+    .raksts h1, .raksts h3{
+        margin: 20px 20px 10px 10px;
+    }
+    .articleContainer>h1, article.raksts{
+        margin-left: 10px;
+    }
+}

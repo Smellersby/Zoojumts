@@ -36,7 +36,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         para.style.backgroundColor='#ffffff00';
         document.getElementById("aniGrid").appendChild(para);
         aniArr.push(para);
-        para.addEventListener('click',()=>{sessionStorage.petName=this.children[1].innerHTML})//saglaba miluļa vardu nakamai lapai
+        para.addEventListener('click', function() { //saglaba miluļa vardu nakamai lapai
+            sessionStorage.setItem('petName', this.children[1].innerHTML);
+        });
         const para2 = document.createElement("div");
 
         if(i.type=="dog"){

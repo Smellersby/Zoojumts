@@ -64,7 +64,7 @@ function changeTheme(){
         root.style.setProperty('--gray', '#f4f4f9')
         root.style.setProperty('--Acolor', 'rgb(33, 114, 200)')
         if(heroImg){heroImg.src='../Images/HeroImage.jpg';}
-        buttonImg.src='../Images/Brightness.png';
+        buttonImg.src='../Images/brightness.png';
         menuButtonImg.src='../Images/menuButton.png'
         backButtonImg.src='../Images/back.png'
         sessionStorage.theme=1;
